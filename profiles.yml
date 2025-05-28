@@ -1,0 +1,54 @@
+config:
+  send_anonymous_usage_stats: false
+  partial_parse: true
+test_01:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: authproviders-391520
+      dataset: elctron_dbt
+      threads: 4
+      priority: interactive
+      keyfile_json:
+        type: service_account
+        project_id: authproviders-391520
+        private_key_id: d4eefcd18c0277ba8897650f8e40abb99e1c57fe
+        private_key: |
+          -----BEGIN PRIVATE KEY-----
+          MIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQC5Xx0fVm6tjNQR
+          OvLzgOjDhf/FYtQJDfNuEuciwkTaiWGSeQ0Eg2ThMK2ZuGCDbGuKQRpsDfywN6hP
+          I1LOunIGCAATIS9UuaYjHCsLKkAXc0uw9WIzeEkmiiTNszkoqF5lw9DUXr/guRN8
+          uDX1OY5h2w8vXw/S51iYtbEATaUySGqRSdBA1OzDCWYNBEnWW1pXm/32TojcJMZ3
+          yvLapnsgjmwGIpXSHchYsgxeiY2+vWC3dSOmCQTK6xdN5dXqYrpzvYP8usdjAaB/
+          4tmM5Zg3HmhTzdNHPbCtEQhl2Vh6itIBqHrZ95fUr0Ia7SGdd7umX8AV0ZJ8oXt9
+          8PCMKxI7AgMBAAECgf9xFGnaNApQKcM0FOx1SVi0mDRECjBOqwlUnIi4gMnVMPkp
+          4QOP5+zMx7p0Ni//UU7zh8Nr0ccpDXV0Jpgyg99gI9aSf4E1WLWAYC6MdmRNPzLC
+          lZjSImPSnsgqCKqq+AqdtFYv4ZzV+WYUhEsQzODj0OidJ+BUnSFEBudyx+rTlfgw
+          G8LYs+xCgilEjXBZBrENnPLEP4aN1zULM3cyYWxKSFzRrQc8VMpPwMvHtLb/IXso
+          54zOEjHEpXU0v79Z3BvkjoevzTJSOm8fGD80I7kdput3hHsbP3ZrJoI93xI5Z49U
+          rQODbfwrOnxLcqbVGoAGPrKiv5f8xTaAYYd4ZIkCgYEA9yyBu2TG7oLAMGYL1QLf
+          LK0b8Osy7Rj93f/YbnDPnTEoxLj9ttaecaDXBldSt6alrSGptfU66dZImVY6toQb
+          03owCVypGhNcLvZmi7kpVwi86/GqI56GNkt3DSA/HfeT2BBGiepQWfbSNG6QI9qq
+          1l1BGoZb2anz3r4WV/y29fMCgYEAv/2nGzej0YFsT22E0m2iXRMv/06K35Hrd0Zf
+          g3zxcgJ1P9w+h7MNo82kNGt63974l4OtTe2Ib+o9lFb0JYT5YCPm8iqXMioQ8aWU
+          Sg81aGDbR7tPNmw8JWmc1TLygnuguM5MVs6v/K4/bhRLDA4P1YC6A3fHTz/pqfbj
+          j8nGnJkCgYAGX7VwuaaPm/uMw/TmJ07N/iDMU6RajNxvDxvrrSkNaqkceZDBWEN5
+          tqYU2ceeSMPY9RdFQ++i/A2fNqQI9Nsq1unKNAOAUqN76oq2a63vOqB0jSTQClR3
+          rfaB9iTqhunfFnxbLhmoWD8PbxJ0ej0RjhIRtwlDUaiiQ9CbsD6flQKBgBCuOxyU
+          Qvlq4zwracTWnaq0hhEKg+pUxT6BsL691kRvjjxUKGKl3eODdGbRh8V3m+WeHSqO
+          HrKKiXsf6upvmTMPK3uS07waB4rXNgERPTSqZaLf1UwHL1qYyHWFjahkkVw9IEjS
+          gFvVz9ECllqfxiRooMC4YWqzRNvthWvyvfzRAoGBAMg9Wqv8QueERGmSsPdPItWb
+          0A18mZYsgwE0vIy1Zvw5uK0M/MCN3hvfSLPhODyEky8je6Ja5UMa7irM0QBH7MeO
+          S23/NDR3f44OX8ucOZZk3v9931TdutgBSNtVuUT19oqwcGjdbymPJCvfAhU2QHz6
+          I30H3I73ACbmYjoZqbNe
+          -----END PRIVATE KEY-----
+        client_email: dbt-studio@authproviders-391520.iam.gserviceaccount.com
+        client_id: '100760812259314905552'
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        token_uri: https://oauth2.googleapis.com/token
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        client_x509_cert_url: >-
+          https://www.googleapis.com/robot/v1/metadata/x509/dbt-studio%40authproviders-391520.iam.gserviceaccount.com
+        universe_domain: googleapis.com

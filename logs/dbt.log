@@ -1,0 +1,45 @@
+
+
+============================== 09:37:23.349980 | 79bc0792-b7eb-4e3b-b864-c5bc93a5161b ==============================
+[0m09:37:23.349980 [info ] [MainThread]: Running with dbt=1.9.5
+[0m09:37:23.369809 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/nurilacka/rosetta-dbt-studio-projects/test_01', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/nurilacka/rosetta-dbt-studio-projects/test_01/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m09:37:23.370711 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m09:39:32.476308 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m09:39:33.531562 [debug] [MainThread]: checksum: db598d7c6b39ccab7a34d8f04c2e026def65ebd0afcd55f619bc9c7641fcd640, vars: {}, profile: , target: , version: 1.9.5
+[0m09:39:33.533252 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:39:36.234392 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/manifest.json
+[0m09:39:36.242156 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/semantic_manifest.json
+[0m09:39:36.344450 [info ] [MainThread]: Found 493 macros
+[0m09:39:36.347449 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:39:36.349113 [debug] [MainThread]: Command end result
+[0m09:39:36.406938 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/manifest.json
+[0m09:39:36.410953 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/semantic_manifest.json
+[0m09:39:36.416966 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/run_results.json
+[0m09:39:36.419692 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 133.28745, "process_in_blocks": "0", "process_kernel_time": 2.468515, "process_mem_max_rss": "311685120", "process_out_blocks": "0", "process_user_time": 9.913072}
+[0m09:39:36.422133 [debug] [MainThread]: Command `dbt run` succeeded at 09:39:36.421847 after 133.29 seconds
+[0m09:39:36.423071 [debug] [MainThread]: Flushing usage events
+
+
+============================== 09:48:13.008479 | 1c402368-4430-436a-a394-9ca7cc2910e4 ==============================
+[0m09:48:13.008479 [info ] [MainThread]: Running with dbt=1.9.5
+[0m09:48:13.065245 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/nurilacka/rosetta-dbt-studio-projects/test_01', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/nurilacka/rosetta-dbt-studio-projects/test_01/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt test', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m09:48:13.069832 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m09:48:32.603982 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m09:48:34.240016 [debug] [MainThread]: checksum: db598d7c6b39ccab7a34d8f04c2e026def65ebd0afcd55f619bc9c7641fcd640, vars: {}, profile: , target: , version: 1.9.5
+[0m09:48:35.011131 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:48:35.012356 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:48:35.495556 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/manifest.json
+[0m09:48:35.507906 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/semantic_manifest.json
+[0m09:48:35.673605 [info ] [MainThread]: Found 493 macros
+[0m09:48:35.684274 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:48:35.689841 [debug] [MainThread]: Command end result
+[0m09:48:36.249489 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/manifest.json
+[0m09:48:36.253024 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/semantic_manifest.json
+[0m09:48:36.280255 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/nurilacka/rosetta-dbt-studio-projects/test_01/target/run_results.json
+[0m09:48:36.285940 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 23.644, "process_in_blocks": "0", "process_kernel_time": 3.2121, "process_mem_max_rss": "298954752", "process_out_blocks": "0", "process_user_time": 10.234819}
+[0m09:48:36.290498 [debug] [MainThread]: Command `dbt test` succeeded at 09:48:36.290175 after 23.65 seconds
+[0m09:48:36.291822 [debug] [MainThread]: Flushing usage events
